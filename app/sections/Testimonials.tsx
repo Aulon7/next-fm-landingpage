@@ -6,7 +6,13 @@ import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
-    <section>
+    <motion.div
+      id="testimonials"
+      initial={{ opacity: 0, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.5 }}
+    >
       <div className="mt-10 flex flex-col justify-center items-center">
         <h2 className="section-title py-5">What our users say</h2>
         <p className="section-paragraph md:w-[768px]">
@@ -25,7 +31,7 @@ const Testimonials = () => {
       >
         <TestimonialCard testimonials={testimonials} />
       </motion.div>
-    </section>
+    </motion.div>
   );
 };
 

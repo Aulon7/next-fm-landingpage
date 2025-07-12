@@ -15,20 +15,20 @@ const Navigation = ({ isMobile = false }: NavigationType) => {
           : "hidden md:flex gap-5 items-center"
       }`}
     >
-      <Link href="#" className="text-black/60 hover:text-black ">
-        About Us
+      <Link href="#home" className="text-black/60 hover:text-black ">
+        Home
       </Link>
-      <Link href="#" className="text-black/60 hover:text-black">
+      <Link href="#features" className="text-black/60 hover:text-black">
         Features
       </Link>
-      <Link href="#" className="text-black/60 hover:text-black">
-        Customers
+      <Link href="#pricing" className="text-black/60 hover:text-black">
+        Pricing
       </Link>
-      <Link href="#" className="text-black/60 hover:text-black">
-        Latest insights
+      <Link href="#testimonials" className="text-black/60 hover:text-black">
+        Testimonials
       </Link>
-      <Link href="#" className="text-black/60 hover:text-black">
-        Support
+      <Link href="#signup" className="text-black/60 hover:text-black">
+        Sign Up
       </Link>
       <Button className="btn btn-primary">Get started</Button>
     </nav>

@@ -2,7 +2,7 @@ import Footer from "./sections/Footer";
 import Header from "./sections/Header";
 import HeadingSection from "./sections/HeadingSection";
 import Logo from "./sections/Logo";
-import MainShowcase from "./sections/MainShowcase";
+import Features from "./sections/Features";
 import PriceSection from "./sections/PriceSection";
 import Testimonials from "./sections/Testimonials";
 import SignUpSection from "./sections/SignUpSection";
@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <HeadingSection />
       <Logo />
-      <MainShowcase />
+      <Features />
       <PriceSection />
       <Testimonials />
       <SignUpSection />
