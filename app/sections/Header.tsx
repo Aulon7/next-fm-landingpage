@@ -3,10 +3,11 @@ import React, { useState } from "react";
 import ArrowRight from "@assets/arrow-right.svg";
 import Navigation from "./Navigation";
 import { Sling as MobileMenu } from "hamburger-react";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const { scrollYProgress } = useScroll();
   return (
     <header className="sticky top-0 backdrop-blur-sm z-10">
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
@@ -18,6 +19,18 @@ const Header = () => {
           <ArrowRight className="h-4 w-4 inline-flex justify-center items-center" />
         </div>
       </div>
+      <motion.div
+        style={{
+          scaleX: scrollYProgress,
+          position: "fixed",
+          top: 43,
+          left: 0,
+          right: 0,
+          height: 5,
+          originX: 0,
+          backgroundColor: "blueviolet",
+        }}
+      />
       <div className="py-5">
         <div className="flex items-center justify-between px-5">
           <div className="flex-1 hidden md:flex justify-center">

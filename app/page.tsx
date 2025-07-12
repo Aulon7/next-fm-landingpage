@@ -1,22 +1,22 @@
-import CallAction from "./sections/CallAction";
 import Footer from "./sections/Footer";
 import Header from "./sections/Header";
-import Hero from "./sections/Hero";
+import HeadingSection from "./sections/HeadingSection";
 import Logo from "./sections/Logo";
 import MainShowcase from "./sections/MainShowcase";
 import PriceSection from "./sections/PriceSection";
 import Testimonials from "./sections/Testimonials";
+import SignUpSection from "./sections/SignUpSection";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
+      <HeadingSection />
       <Logo />
       <MainShowcase />
       <PriceSection />
       <Testimonials />
-      <CallAction />
+      <SignUpSection />
       <Footer />
     </>
   );

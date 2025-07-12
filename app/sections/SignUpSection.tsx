@@ -8,7 +8,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import useScrollAnimation from "@/utils/useScrollAnimation";
 
-const CallAction = () => {
+const SignUpSection = () => {
   const { currentRef, translateY } = useScrollAnimation(200, -200);
   return (
     <section
@@ -59,4 +59,4 @@ const CallAction = () => {
   );
 };
 
-export default CallAction;
+export default SignUpSection;

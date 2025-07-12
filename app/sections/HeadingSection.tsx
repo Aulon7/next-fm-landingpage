@@ -20,7 +20,7 @@ const fadeInFromRight = {
   transition: { duration: 1, ease: easeInOut },
 };
 
-const Hero = () => {
+const HeadingSection = () => {
   const { currentRef, translateY } = useScrollAnimation();
   return (
     <section
@@ -62,4 +62,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeadingSection;
