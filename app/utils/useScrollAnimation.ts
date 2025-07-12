@@ -5,10 +5,10 @@ export default function useScrollAnimation(
   start: number = 150,
   end: number = -150
 ): {
-  currentRef: React.RefObject<HTMLElement | null>;
+  currentRef: React.RefObject<HTMLDivElement | null>;
   translateY: MotionValue<number>;
 } {
-  const currentRef = useRef<HTMLElement | null>(null);
+  const currentRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
     target: currentRef,

@@ -23,15 +23,12 @@ const fadeInFromRight = {
 const HeadingSection = () => {
   const { currentRef, translateY } = useScrollAnimation();
   return (
-    <motion.div
-      id="home"
-      initial={{ opacity: 0, y: 0 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true, amount: 0.5 }}
-    >
-      <section
-        ref={currentRef}
+    <section id="home" ref={currentRef} aria-label="Introduction and overview">
+      <motion.div
+        initial={{ opacity: 0, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         className="md:flex justify-around items-center overflow-x-clip pt-10 pb-20 md:pt-5 md:pb-10 bg-linear-to-tl from-blue-500 from-15% to-white to-50% drop-shadow-xl"
       >
         <motion.div {...fadeInFromTop} className="md:w-[478px] px-10">
@@ -65,8 +62,8 @@ const HeadingSection = () => {
             />
           </motion.div>
         </div>
-      </section>
-    </motion.div>
+      </motion.div>
+    </section>
   );
 };
 
