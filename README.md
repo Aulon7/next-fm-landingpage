@@ -1,12 +1,12 @@
 ## RE Landing Page - UI Only
 
-A sleek, responsive landing page build with React, Framer Motion and TailwindCSS
+A sleek, responsive landing page build with React, Framer Motion and TailwindCSS!
 
 ## Features 
-- ⚡ Fast and SEO-optimized with Next.js
-- 🎯 Smooth animations using Framer Motion
-- 💅 Styled with Tailwind CSS
-- 📱 Mobile-first responsive design
+-  Fast and SEO-optimized with Next.js
+-  Smooth animations using Framer Motion
+-  Styled with Tailwind CSS
+-  Mobile-first responsive design
 
 ##  Tech Stack
 
